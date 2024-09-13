@@ -1,0 +1,41 @@
+Definition of GIT:-
+             Git is a version control system that helps you track changes in your files and collaborate with others;
+Definition of GIT HUB:-
+             GitHub is a platform for hosting and sharing code, making it easier for developers to collaborate on projects.
+             It uses Git for version control, allowing multiple people to work on the same codebase. GitHub also offers tools for issue tracking, code review, and project management
+Use of Git Hub:-
+            *)Code Hosting: Store and share your code with others.
+            *)Collaboration: Work with teammates on projects, making it ideal for open-source contributions.
+            *)Issue Tracking: Manage and assign tasks to keep your workflow organized.
+            *)Pull Requests: Review and merge changes from different contributors.
+            *)GitHub Pages: Create and host static websites directly from your repositories
+What is Git Bash Software:-
+            Git Bash is a command-line tool for Windows that provides a Unix-like environment to use Git commands. 
+            It combines Git with Bash, a popular Unix shell, making it easier to interact with Git repositories
+Use of Git Bsah Software:-
+            *)Git Commands: Run Git commands like clone, commit, push, and pull on Windows
+            *)Scripting: Automate tasks with custom scripts
+            *)Learning: Helps users learn Git and version control through a command-line interface
+Steps to perform git push and pull though command line:-
+step1:- Create a repository in git hub;
+step2:- Copy the url;
+step3:- Go to "C:/" Drive;
+step4:- create 2 Folders name like "Local_Host" and "SMS":
+step5:-Inside "SMS" folder create a "text.txt" file;
+step6:-Go to browser and download "Beyond Compare Software";
+step7:-Install it;
+step8:-Open "Beyond Compare Software"
+step9:-In that select "Foldare Compare"
+step10:-You will have Two sides of Selecting workspace for folder or Document comparsion
+                             Left Side:-                                                                                                                       Right Side:-  
+              *)Select "Local_Repo" folder from this side;                                                                                    *)Select "text.txt" file inside "SMS" folder;
+Step11:- In left side select "Loco_Repo" folder and click on "->" arrow button to copy to "SMS" Folder;
+Step12:- In right side select "text.txt" file and click on "<-" arrow button to copy to "Local_Repo" Folder;
+step13:- Go to command prompt;
+step14:- In that choose c:\SMS;
+step15:- type "SMS>git pull"                          //To take resorces
+step16:- type "git add -u"                           // To update
+step17:-type "git add *"                             //To add all
+step18:-type "git commit -m 'Hello123' "             //where "-m" stands for "message"
+step19:-type "git push"                             //This will upload the message
+step20:-Open github and refresh the page you will get that message.

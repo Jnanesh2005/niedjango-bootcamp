@@ -1,0 +1,175 @@
+Introduction To DataBase:-
+       A database is a collection of interrelated data that helps in the efficient retrieval, insertion, and deletion of data from the database and organizes the data in the form of tables,
+       views, schemas, reports, etc. For Example, a university database organizes the data about students, faculty, admin staff, etc. which helps in the efficient retrieval, insertion, and 
+       deletion of data from it.
+
+Intruduction to MYSQL:-
+       *)MySQL is a relational database management system.
+       *)MySQL is cross-platform.
+       *)MySQL is very fast, reliable, scalable, and easy to use.
+       *)MySQL is ideal for both small and large applications.
+
+Introduction to NOSQL:-
+       *)Non-Relational are designed to handle a wide variety of data models, including document, key-value, wide-column, and graph formats. 
+       *)Unlike traditional relational databases, NoSQL databases are known for their flexible schemas for unstructured data, scalability, and ease of use for developers.
+
+Setting up Environament to downlad MYSQL work bench;
+
+Queries TO Perform if MYSQL Work Bench:-
+       *)Creating a Database:- CREATE DATABASE database_name;
+       *)Selecting a Database:- USE database_name;.
+       *)Creating a Table:- CREATE TABLE table_name (column_definitions);
+       *)Inserting Data:-INSERT INTO table_name (columns) VALUES (values);
+       *)Updating Data:-UPDATE table_name SET column = value WHERE condition;
+       *)Deleting Data: DELETE FROM table_name WHERE condition;
+       *)Querying specfic Data: SELECT columns FROM table_name WHERE condition;
+       *)Retrieving All Data: SELECT * FROM table_name;
+       *)Counting Records: SELECT COUNT(*) FROM table_name;
+       *)Finding Maximum Value: SELECT MAX(column_name) FROM table_name;
+       *)Inner_Joining Tables: SELECT column_name(s)  FROM table1 INNER JOIN table2 ON table1.column_name = table2.column_name;
+
+
+Queries practised in SDP lab:-
+
+#1)   create schema NIE;
+use NIE;
+
+create table student(id int primary key,Fname varchar(20),Lname varchar(40),Branch char(2));
+
+insert into student values(01,"Bhairav","Deekshith",'CS');
+
+insert into student values(02,"Nathen","Drake",'CS');
+insert into student values(03,"Hello","world",'IS');
+insert into student values(04,"New","DAy",'ES');
+insert into student values(05,"Darshan","Kumar",'CS');
+insert into student values(06,"Akash","Gowda",'CS');
+insert into student values(07,"Sankalp","Nayak",'CS');
+insert into student values(08,"Girish","Samson",'CS');
+
+select * from student;
+
+alter table student add column dept int ; 
+update student set dept=001 where id=01;
+update student set dept=002 where id=02;
+update student set dept=003 where id=03;
+update student set dept=004 where id=04;
+update student set dept=005 where id=05;
+update student set dept=006 where id=06;
+update student set dept=007 where id=07;
+update student set dept=008 where id=08;
+
+create table department(id int primary key,Branch_Name varchar(20));
+
+insert into department values(001,"CSE");
+insert into department values(002,"ISE");
+insert into department values(003,"ESE");
+insert into department values(004,"BSE");
+insert into department values(005,"PSE");
+insert into department values(006,"TSE");
+insert into department values(007,"YSE");
+insert into department values(008,"LSE");
+
+create table student1(Reg_No int primary key,Sname varchar(20),dept_id int,foreign key(dept_id) references department(id));
+
+insert into student1 values(01,"Bhairav",001);
+
+insert into student1 values(02,"Nathen",002);
+insert into student1 values(03,"Hello",003);
+insert into student1 values(04,"New",004);
+insert into student1 values(05,"Darshan",005);
+insert into student1 values(06,"Akash",006);
+insert into student1 values(07,"Sankalp",007);
+insert into student1 values(08,"Girish",008); 
+
+select * from student1;
+select * from department;
+
+select Sname from student1;
+
+drop database nie;
+
+use python1;
+show tables;
+select * from students;
+
+
+#2)  create database sdp;
+
+use sdp;
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    Ename varchar(20),
+    position varchar(20),
+    salary decimal(10,2),
+    dept varchar(20));
+
+     INSERT INTO employees VALUES (1,"John doe","Software Engineer",60000.00,"IT");
+     INSERT INTO employees VALUES (2,"John Smith","Project Manager",75000.00,"IT");  
+     INSERT INTO employees VALUES (3,"John doe","Devops Engineer",70000.00,"IT");
+     INSERT INTO employees VALUES (4,"Emily Davis","Data Analyst",65000.00,"IT");
+     INSERT INTO employees VALUES (5,"Sarah Brown","Software Engineer",62000.00,"IT");
+
+    select * from employees;
+
+    select Ename,salary from employees;
+
+    select position from employees where position="Software Engineer";
+
+    select distinct position from employees;
+
+    select position from employees;
+
+    select * from employees where salary<65000.00;
+
+    select * from employees where salary>65000.00;
+
+    select * from employees where Ename like "%h";
+
+    select * from employees where Ename like "J%";
+
+    select * from employees order by salary;
+
+    select * from employees order by salary desc;
+
+    select * from employees order by Ename;
+
+    select * from employees order by Ename desc;
+
+    select position, count(*) as total_Employees from employees group by position;
+
+    select min(salary) as avg_sal from employees;
+
+    select max(salary) as avg_sal from employees;
+
+    select avg(salary) as avg_sal from employees;
+
+    drop table employees;
+
+
+
+#3)   reate table departments(dept_id int primary key,depatment_Name varchar(100),location varbinary(20));
+
+      insert into departments value(01,"Computer Science","A sec");
+      insert into departments value(02,"Information Science","B sec");
+      insert into departments value(03,"Mechanical Science","C sec");
+      insert into departments value(04,"Civil  Science","D sec");
+      insert into departments value(05,"Robotic Science","E sec");
+
+      use sdp;
+      select * from departments;
+
+      create table students2(Reg_no int primary key,Sname varchar(20),dept_id int, foreign key(dept_id) references departments(dept_id));
+
+      insert into students2 values(01,"Bhairav",01);
+      insert into students2 values(02,"Bhuvin",02);
+      insert into students2 values(03,"Mayur",03);
+      insert into students2 values(04,"Diganth",04);
+      insert into students2 values(05,"Saanvi",05);
+
+      show tables;
+      desc departments;
+      select std2.Reg_no,std2.Sname,dept.depatment_Name from students2 std2 inner join departments  dept on std2.dept_id = dept.dept_id ;
+
+
+      show tables;

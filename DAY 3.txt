@@ -1,0 +1,301 @@
+Introduction to HTML:-
+                       *)HyperText Markup Language, is the standard markup language used to create web pages. 
+                       *)It structures the content on the web and tells the browser how to display text, images, and other elements.
+
+Use of HTML:-
+              *)Structuring Web Pages: HTML provides the basic structure of web pages, using elements like headings, paragraphs, lists, and links.
+              *)Embedding Media: It allows embedding images, videos, and audio files to make web pages more interactive and engaging.
+              *)Creating Forms: HTML is used to create forms for user input, such as login forms, search boxes, and contact forms.
+              *)Linking Content: It enables linking to other web pages, both within the same site and to external sites, using hyperlinks.
+
+Introduction to CSS:-
+               *)CSS, or Cascading Style Sheets, is a language used to describe the presentation of a web page written in HTML or XML.
+               *)It controls the layout, colors, fonts, and overall visual appearance of web pages.
+
+Use of CSS:-
+          *)Styling Text: CSS allows you to change the color, font, size, and spacing of text.
+          *)Layout Design: It helps in arranging elements on a web page, including positioning, margins, and padding.
+          *)Responsive Design: CSS makes web pages adaptable to different screen sizes and devices.
+          *)Visual Effects: It enables the creation of animations, transitions, and other visual effects.
+          *)Theming: CSS allows for the application of different themes and styles across multiple web pages for a consistent look and feel.
+
+Introduction to BootStrap:-
+                      *)Bootstrap is a popular, open-source front-end framework used for developing responsive and mobile-first websites. 
+                      *)It includes a collection of pre-written HTML, CSS, and JavaScript code snippets. 
+                      *)Bootstrap simplifies the process of designing web pages by providing a variety of templates and components.
+
+Use of BootStrap:-
+                *)Responsive Design: Bootstrap makes it easy to create websites that look good on all devices, from phones to desktops.
+                *)Pre-designed Components: It offers a variety of pre-styled components like buttons, forms, and navigation bars.
+                *)Grid System: Bootstrap’s grid system helps in creating flexible and responsive layouts.
+                *)Customizable: You can easily customize Bootstrap to fit your project’s needs by overriding its default styles.
+                *)Time-saving: Speeds up development by providing ready-to-use code snippets and templates.
+
+Developing web page using html,css and Bootstrap
+
+<------------------------------------------------------------------------------------------------------CODE------------------------------------------------------------------------------------------------------->
+#1)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 id="p1">H1 tag</h1>
+    <h2 id="p2" align="Middle">H2 tag</h2>
+    <h3 id="p2" align="Middle">H2 tag</h2>
+    <h3 id="p3"><h3 id="3">H3 tag</h3>
+    <h4 id="p4" align="right">H4 tag</h4>
+    <h5 id="p5">H5 tag</h5>
+    <h6 id="p6">H6 tag</h6>
+
+    <button style="background-color: ;">Save this</button>
+ <br>
+ <hr>
+ <div style="position: middle;">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-primary">Primary</button>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-secondary">Secondary</button>
+      </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-success">Success</button>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-danger">Danger</button>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-warning">Warning</button>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-info">Info</button>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-light">Light</button>
+      </div>
+      <div class="spinner-border text-dark" role="status">
+        <span class="visually-hidden">Loading...</span><button type="button" class="btn btn-dark">Dark</button>
+
+      </div>
+      <br>
+      <hr>
+
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#2) "GRID"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Flexibility</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .box {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center mt-5">Bootstrap Grid Flexibility</h1>
+
+  <div class="row">
+    <!-- Column 1: Large screens take 3, medium 6, small 12 (full width) -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="box">Column 1</div>
+    </div>
+
+    <!-- Column 2: Large screens take 3, medium 6, small 12 (full width) -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="box">Column 2</div>
+    </div>
+
+    <!-- Column 3: Large screens take 3, medium 6, small 12 (full width) -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="box">Column 3</div>
+    </div>
+
+    <!-- Column 4: Large screens take 3, medium 6, small 12 (full width) -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="box">Column 4</div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3) CSS
+
+#p1{
+    background-color: aquamarine;
+}
+
+#p2{
+    background-color: aqua;
+}
+
+#p3{
+    background-color: cyan;
+}
+
+#p4{
+    background-color: darkturquoise;
+}
+
+#p5{
+    background-color: dodgerblue;
+}
+
+#p6{
+    background-color: greenyellow;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Introduction to Python programming:-
+                      *)Python is a high-level, interpreted programming language known for its simplicity and readability.
+                      *)It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. 
+                      *)Python is widely used for web development, data analysis, artificial intelligence, and automation.
+
+Use of Python programming:-
+                      *)Web Development: Python is used to build web applications with frameworks like Django and Flask.
+                      *)Data Analysis: It is widely used for data analysis and visualization with libraries like Pandas and Matplotlib.
+                      *)Machine Learning: Python is popular in AI and machine learning, using libraries like TensorFlow and scikit-learn.
+                      *)Automation: It helps automate repetitive tasks, such as web scraping and scripting.
+                      *)Software Development: Python is used for developing desktop applications and software prototypes.
+
+Connecting DataBase of MYSQL through Python:-
+
+step1:-Create a new database in mysql;
+step1:-open command prompt;
+step1:-type "python --version"              //To check python is installed or not in your device also version
+step1:-If not download python.exe file from google;
+step1:-type "pip install mysql-connector-python;
+step1:-After that open vscode and create a file name extension with".py";
+step1:-Type the code below to perform database connection through python;
+
+<-----------------------------------------------------------------------------------DataBase Connection python code:---------------------------------------------------------------------------------------------->
+import mysql.connector
+
+connection= mysql.connector.connect(
+    host='localhost',
+    database='python1',
+    user='root',
+    password='Root@321',
+    port='3307'
+)
+if connection.is_connected():
+    print("Done connection")
+
+<---------------------------------------------------------------------------------------To Create Table using Python---------------------------------------------------------------------------------------------->
+cursor=connection.cursor()
+    # create_table_query="""
+    #         CREATE TABLE IF NOT EXISTS students(
+    #             id INT AUTO_INCREMENT PRIMARY KEY,
+    #             name VARCHAR(255) NOT NULL,
+    #             age INT,
+    #             gender VARCHAR(10)
+    #             )"""
+    # cursor.execute(create_table_query)
+    # print("Table 'student' created successfully")
+
+<---------------------------------------------------------------------------------------------Inserting data------------------------------------------------------------------------------------------------------>
+ # insert_query="""
+    #         INSERT INTO students (name, age, gender)
+    #         values(%s, %s, %s)
+    #         """
+
+    # student_records=[
+    #          ('Bhairav',20,'Male'),
+    #          ('Diganth',4,'Male'),
+    #          ('Mayur',16,'Male'),
+    #          ('Bhuvin',3,'Male'),
+    #          ('saanvi',8,'Female')
+    # ]
+
+    # cursor.executemany(insert_query, student_records)
+    # connection.commit()
+    # print(f"{cursor.rowcount} records inserted successfully in the table")
+
+<-------------------------------------------------------------------------------------------Viewing the data------------------------------------------------------------------------------------------------------>
+select_query = "SELECT * FROM students"
+    cursor.execute(select_query)
+    records = cursor.fetchall()
+    print("Fetching data from 'students' table:")
+    for row in records:
+     print(f"ID: {row[0]}, Name: {row[1]}, Age: {row[2]}, Gender: {row[3]}")
+
+<-------------------------------------------------------------------------------------------Deleting the Data----------------------------------------------------------------------------------------------------->
+ delete_query = "DELETE FROM students WHERE name = %s"
+            name_to_delete = ('Bob',)
+            cursor.execute(delete_query, name_to_delete)
+            connection.commit()
+            print(f"Record deleted for {cursor.rowcount} student(s).")
+
+# Verify the deletion
+cursor.execute(select_query)
+records = cursor.fetchall()
+print("Data after deletion:")
+for row in records:
+    print(f"ID: {row[0]}, Name: {row[1]}, Age: {row[2]}, Gender: {row[3]}")
+
+<---------------------------------------------------------------------------------------------Updating the Data--------------------------------------------------------------------------------------------------->
+
+update_query = """
+            UPDATE students
+            SET age = %s
+            WHERE name = %s
+            """
+            data_to_update = (25, 'Alice')
+            cursor.execute(update_query, data_to_update)
+            connection.commit()
+            print(f"Record updated for {cursor.rowcount} student(s).")
+
+# Verify the update
+cursor.execute(select_query)
+records = cursor.fetchall()
+print("Data after update:")
+for row in records:
+    print(f"ID: {row[0]}, Name: {row[1]}, Age: {row[2]}, Gender: {row[3]}")
+
+<-------------------------------------------------------------------------------------------Droping the table----------------------------------------------------------------------------------------------------->
+
+drop_table_query = "DROP TABLE IF EXISTS students"
+            cursor.execute(drop_table_query)
+            print("Table 'students' dropped successfully.")
+
+# Close the cursor
+cursor.close()
+
+except Error as e:
+    print(f"Error: {e}")
+
+<----------------------------------------------------------------------------------------Disconnect from the Dataase---------------------------------------------------------------------------------------------->
+
+  if connection.is_connected():
+            connection.close()
+            print("MySQL connection is closed")
